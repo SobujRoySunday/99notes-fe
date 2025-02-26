@@ -58,47 +58,47 @@ const content = `
             `;
 
 export default function Home() {
-  return (
-    <div className="p-4 md:p-12 flex flex-col items-center gap-12">
-      <div>
-        <Image src={HISTORY_IMG} width={1920} height={1080} alt="History Image" />
-      </div>
+    return (
+        <div className="p-4 md:p-12 flex flex-col items-center gap-12">
+            <div>
+                <Image src={HISTORY_IMG} width={1920} height={1080} alt="History Image" />
+            </div>
 
-      <div className="text-center font-medium">
-        <h4 className="">ANCIENT INDIA</h4>
-        <h2 className="text-5xl">What is History? Sources & Types of History</h2>
-      </div>
+            <div className="text-center font-medium">
+                <h4 className="">ANCIENT INDIA</h4>
+                <h2 className="text-5xl">What is History? Sources & Types of History</h2>
+            </div>
 
-      <div className="w-full flex flex-col md:flex-row text-center font-semibold gap-4">
-        <div className="w-full md:w-1/3 border rounded p-4">
-          Article
-        </div>
-        <div className="w-full md:w-1/3 border rounded p-4 flex items-center justify-center">
-          <div className="flex gap-2 items-center">
-            <Lock size={24} />
-            Practice Questions
-          </div>
-        </div>
-        <div className="w-full md:w-1/3 border rounded p-4 flex items-center justify-center">
-          <div className="flex gap-2 items-center">
-            <Lock size={24} />
-            Videos
-          </div>
-        </div>
-      </div>
+            <div className="w-full flex flex-col md:flex-row text-center font-semibold gap-4">
+                <div className="w-full md:w-1/3 border rounded p-4">
+                    Article
+                </div>
+                <div className="w-full md:w-1/3 border rounded p-4 flex items-center justify-center">
+                    <div className="flex gap-2 items-center">
+                        <Lock size={24} />
+                        Practice Questions
+                    </div>
+                </div>
+                <div className="w-full md:w-1/3 border rounded p-4 flex items-center justify-center">
+                    <div className="flex gap-2 items-center">
+                        <Lock size={24} />
+                        Videos
+                    </div>
+                </div>
+            </div>
 
-      <div className="w-full flex flex-row gap-4">
-        <div className="w-3/4 rounded border h-fit p-8">
-          <HtmlToWeb content={content} />
+            <div className="w-full flex flex-row gap-4">
+                <div className="w-3/4 rounded border h-fit p-8">
+                    <HtmlToWeb content={content} />
+                </div>
+                <div className="w-1/4 flex flex-col gap-4">
+                    <QuizCard />
+                    <UPSCNotesCard />
+                    <RelatedTopics />
+                    <Tags />
+                    <ArticleInfo />
+                </div>
+            </div>
         </div>
-        <div className="w-1/4 flex flex-col gap-4">
-          <QuizCard />
-          <UPSCNotesCard />
-          <RelatedTopics />
-          <Tags />
-          <ArticleInfo />
-        </div>
-      </div>
-    </div>
-  );
+    );
 }

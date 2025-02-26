@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect } from 'react'
+import './HtmlToWeb.css'
 
 const HtmlToWeb = ({ content }: { content: string }) => {
     useEffect(() => {

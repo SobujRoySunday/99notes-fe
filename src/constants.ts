@@ -1,6 +1,8 @@
 import { Menu } from "lucide-react";
 import { Lock } from "lucide-react";
 
+export const GS1_IMG = "/gs1.png";
+
 export const UPSC_NOTES_IMG = "/upsc-notes.png";
 
 export const HISTORY_IMG = "/history.png";
