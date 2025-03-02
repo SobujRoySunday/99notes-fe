@@ -1,16 +1,16 @@
-/* Reset all Tailwind utility styles for elements inside #HtmlContent */
-#HtmlContent * {
+/* Reset all Tailwind utility styles for elements inside .HtmlToWeb */
+.HtmlToWeb * {
     all: unset; /* Reset all properties to their inherited or default values */
     display: revert; /* Restore default display behavior */
   }
   
-  /* Ensure block elements behave correctly inside #HtmlContent */
-  #HtmlContent body, #HtmlContent div, #HtmlContent section, #HtmlContent article, #HtmlContent aside, #HtmlContent header, #HtmlContent footer, #HtmlContent nav, #HtmlContent main {
+  /* Ensure block elements behave correctly inside .HtmlToWeb */
+  .HtmlToWeb body, .HtmlToWeb div, .HtmlToWeb section, .HtmlToWeb article, .HtmlToWeb aside, .HtmlToWeb header, .HtmlToWeb footer, .HtmlToWeb nav, .HtmlToWeb main {
     display: block;
   }
   
-  /* Restore default text behavior inside #HtmlContent */
-  #HtmlContent body {
+  /* Restore default text behavior inside .HtmlToWeb */
+  .HtmlToWeb body {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -20,27 +20,27 @@
     padding: 0;
   }
   
-  /* Reset headings inside #HtmlContent */
-  #HtmlContent h1, #HtmlContent h2, #HtmlContent h3, #HtmlContent h4, #HtmlContent h5, #HtmlContent h6 {
+  /* Reset headings inside .HtmlToWeb */
+  .HtmlToWeb h1, .HtmlToWeb h2, .HtmlToWeb h3, .HtmlToWeb h4, .HtmlToWeb h5, .HtmlToWeb h6 {
     font-weight: bold;
     margin: 0.67em 0;
   }
   
-  /* Restore default list styles inside #HtmlContent */
-  #HtmlContent ul, #HtmlContent ol {
-    list-style: initial;
+  /* Restore default list styles inside .HtmlToWeb */
+  .HtmlToWeb ul, .HtmlToWeb ol {
+    list-style: initial !important;
     padding-left: 40px;
   }
   
-  /* Restore default anchor behavior inside #HtmlContent */
-  #HtmlContent a {
+  /* Restore default anchor behavior inside .HtmlToWeb */
+  .HtmlToWeb a {
     color: blue;
     text-decoration: underline;
     cursor: pointer;
   }
   
-  /* Restore button styles inside #HtmlContent */
-  #HtmlContent button {
+  /* Restore button styles inside .HtmlToWeb */
+  .HtmlToWeb button {
     all: revert;
     padding: 6px 12px;
     border: 1px solid black;
@@ -48,29 +48,29 @@
     cursor: pointer;
   }
   
-  /* Restore form element styles inside #HtmlContent */
-  #HtmlContent input, #HtmlContent textarea, #HtmlContent select, #HtmlContent button {
+  /* Restore form element styles inside .HtmlToWeb */
+  .HtmlToWeb input, .HtmlToWeb textarea, .HtmlToWeb select, .HtmlToWeb button {
     font: inherit;
   }
   
-  /* Restore table styles inside #HtmlContent */
-  #HtmlContent table {
+  /* Restore table styles inside .HtmlToWeb */
+  .HtmlToWeb table {
     border-collapse: collapse;
     width: 100%;
   }
-  #HtmlContent th, #HtmlContent td {
+  .HtmlToWeb th, .HtmlToWeb td {
     border: 1px solid black;
     padding: 8px;
   }
   
-  /* Ensure images behave correctly inside #HtmlContent */
-  #HtmlContent img {
+  /* Ensure images behave correctly inside .HtmlToWeb */
+  .HtmlToWeb img {
     max-width: 100%;
     height: auto;
   }
   
-  /* Restore flex and grid behavior inside #HtmlContent */
-  #HtmlContent [style*="display: flex"], #HtmlContent [style*="display: grid"] {
+  /* Restore flex and grid behavior inside .HtmlToWeb */
+  .HtmlToWeb [style*="display: flex"], .HtmlToWeb [style*="display: grid"] {
     display: revert !important;
   }
   

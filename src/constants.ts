@@ -12,9 +12,12 @@ export const LOGO_IMG = "/logo.png";
 export const NAV_LINKS = [
   { name: "Home", href: "/" },
   { name: "UPSC Notes", href: "/upsc-notes" },
-  { name: "Free Study Material", href: "/free-material" },
   { name: "Current Affairs", href: "/current-affairs" },
+  { name: "Free Study Material", href: "/free-material" },
+  { name: "Exam Forum", href: "/exam-forum" },
   { name: "About", href: "/about" },
+  { name: "Blogs", href: "/blogs" },
+  { name: "FAQs", href: "/faqs" },
 ];
 
 export { Menu, Lock };

@@ -7,6 +7,7 @@ import Tags from "./Tags/Tags";
 import ArticleInfo from "./ArticleInfo/ArticleInfo";
 import CardGrid from "./CardGrid/CardGrid";
 import Heading from "./Heading/Heading";
+import Container from "./Container/Container";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   ArticleInfo,
   CardGrid,
   Heading,
+  Container,
 };

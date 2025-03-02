@@ -30,7 +30,7 @@ export default function CardGrid() {
                         key={index}
                         className="bg-white rounded-2xl overflow-hidden border border-gray-200"
                     >
-                        <div className="relative w-full h-48">
+                        <div className="relative w-full h-52">
                             <Image
                                 src={card.image}
                                 alt={card.title}

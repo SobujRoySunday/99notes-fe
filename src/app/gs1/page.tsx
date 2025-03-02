@@ -13,7 +13,7 @@ const relatedLinks = [
 
 const GS1 = () => {
     return (
-        <div className="p-4 md:p-12 flex flex-col items-center gap-12">
+        <div className="p-4 md:px-24 flex flex-col items-center gap-12">
             <div>
                 <Image src={GS1_IMG} width={1920} height={1080} alt="History Image" />
             </div>
@@ -34,7 +34,7 @@ const GS1 = () => {
 
             <div className='flex flex-col gap-12 w-full'>
                 <Heading text={'UPSC GS 1 Syllabus'} />
-                <HtmlToWeb content={`<p>The General Studies (GS) 1 paper of the UPSC Civil Services Examination (CSE) covers the subjects of Indian Heritage and Culture, History, and Geography. It aims to test the candidate’s knowledge of India’s cultural and physical diversity, as well as its history and geographical features.</p>
+                <HtmlToWeb id={1} content={`<p>The General Studies (GS) 1 paper of the UPSC Civil Services Examination (CSE) covers the subjects of Indian Heritage and Culture, History, and Geography. It aims to test the candidate’s knowledge of India’s cultural and physical diversity, as well as its history and geographical features.</p>
 
     <h2>Here are some tips on how to prepare for the GS 1 paper in detail:</h2>
 
@@ -102,8 +102,50 @@ const GS1 = () => {
             </div>
 
             {/* Guide to Get Started with USC CSE 2024 */}
-            <div className='w-full'>
+            <div className='w-full flex flex-col gap-12'>
                 <Heading text="Guide to Get Started with USC CSE 2024" />
+                <HtmlToWeb id={2} content={` <h1>GS 1 UPSC: Your Ultimate Guide</h1>
+    <p>Preparing for the UPSC exam can be daunting, especially when tackling the vast syllabus of General Studies 1 (GS 1). This guide is designed to provide you with comprehensive GS 1 notes for UPSC, helping you ace one of the most challenging components of the exam.</p>
+    
+    <h2>What is GS 1 in UPSC?</h2>
+    <p>General Studies 1 (GS 1) is a crucial part of the UPSC Civil Services Examination, covering a wide array of subjects including Indian Heritage and Culture, History, and Geography of the World and Society. Understanding the depth and breadth of GS 1 UPSC is essential for scoring well.</p>
+    
+    <h2>Key Topics Covered in GS 1 UPSC</h2>
+    <ol>
+        <li><strong>Indian Heritage and Culture:</strong> Explore India’s cultural heritage, including art forms, literature, and architecture.</li>
+        <li><strong>History:</strong> Study Modern Indian History, the Freedom Struggle, and Post-Independence consolidation.</li>
+        <li><strong>Geography:</strong> Learn about physical, social, and economic geography of India and the world.</li>
+    </ol>
+    
+    <h2>Why GS 1 Notes for UPSC are Crucial</h2>
+    <p>Well-organized GS 1 notes for UPSC help in quick revisions, better retention, and understanding of key concepts. They are indispensable tools for cracking the exam.</p>
+    
+    <h2>How to Prepare Effective GS 1 Notes for UPSC</h2>
+    <ul>
+        <li><strong>Systematic Study:</strong> Break down the syllabus into manageable sections.</li>
+        <li><strong>Current Affairs Integration:</strong> Relate concepts to current events.</li>
+        <li><strong>Use of Diagrams and Maps:</strong> Enhance understanding and recall.</li>
+    </ul>
+    
+    <h2>Free Study Material on GS 1 UPSC from 99Notes</h2>
+    <p>Access free study material on GS 1 UPSC from 99Notes, offering detailed explanations and insights into all major topics.</p>
+    
+    <h2>Recommended Resources for GS 1 UPSC</h2>
+    <ul>
+        <li><strong>99Notes Website:</strong> A top free resource for UPSC aspirants.</li>
+        <li><strong>NCERT Books:</strong> Provide a strong foundation.</li>
+        <li><strong>Books on GS 1 Notes UPSC:</strong> Use books by authors like Bipin Chandra for history and Majid Husain for geography.</li>
+        <li><strong>Online Resources:</strong> Websites like PIB, Yojana, and Kurukshetra offer valuable insights.</li>
+    </ul>
+    
+    <h2>Tips for Success in GS 1 UPSC</h2>
+    <ul>
+        <li><strong>Consistent Revision:</strong> Regularly revise your GS 1 notes.</li>
+        <li><strong>Practice Writing:</strong> Answer writing practice is crucial.</li>
+        <li><strong>Mock Tests:</strong> Participate in mock tests to assess your preparation.</li>
+    </ul>
+    
+    <p>By following these strategies and utilizing comprehensive GS 1 notes for UPSC, you can enhance your preparation and boost your confidence. Stay focused, stay motivated, and success in UPSC is within your reach!</p>`} />
             </div>
 
             {/* A Guide to Getting Started with UPSC CSE 2024 */}

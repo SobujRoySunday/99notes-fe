@@ -3,9 +3,9 @@
 import React, { useEffect } from 'react'
 import './HtmlToWeb.css'
 
-const HtmlToWeb = ({ content }: { content: string }) => {
+const HtmlToWeb = ({ id, content }: { id: number, content: string }) => {
     useEffect(() => {
-        const htmlContent = document.getElementById('HtmlContent');
+        const htmlContent = document.getElementById(`HtmlContent${id}`);
 
         if (htmlContent && content) {
             htmlContent.innerHTML = content;
@@ -13,7 +13,7 @@ const HtmlToWeb = ({ content }: { content: string }) => {
     })
 
     return (
-        <div id='HtmlContent'></div>
+        <div className='HtmlToWeb' id={`HtmlContent${id}`}></div>
     )
 }
 

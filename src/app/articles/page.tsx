@@ -2,6 +2,17 @@ import { HtmlToWeb, QuizCard, UPSCNotesCard, RelatedTopics, Tags, ArticleInfo } 
 import { HISTORY_IMG, Lock } from "@/constants";
 import Image from "next/image";
 
+const tags = [
+    {
+        id: 2,
+        documentId: "di2974hukem9zm4rpbkgm2c1",
+        name: "history",
+        createdAt: "2025-03-01T12:17:09.450Z",
+        updatedAt: "2025-03-01T12:17:09.450Z",
+        publishedAt: "2025-03-01T12:17:09.464Z"
+    }
+];
+
 const content = `
             <h1>What is History?</h1>
     <p>The word history is derived from the <span class="highlight">ancient Greek word</span> ‘Historia’, which translates into <span class="highlight">“an inquiry”</span>. Thus, the knowledge acquired by the investigation of the events of the past is history. In simple terms, <strong>it is the enquiry of the ‘human past’.</strong></p>
@@ -89,14 +100,19 @@ export default function Home() {
 
             <div className="w-full flex flex-row gap-4">
                 <div className="w-3/4 rounded border h-fit p-8">
-                    <HtmlToWeb content={content} />
+                    <HtmlToWeb id={1} content={content} />
                 </div>
                 <div className="w-1/4 flex flex-col gap-4">
                     <QuizCard />
                     <UPSCNotesCard />
-                    <RelatedTopics />
-                    <Tags />
-                    <ArticleInfo />
+                    <RelatedTopics relatedTopics={[]} />
+                    <Tags tags={tags} />
+                    <ArticleInfo
+                        category={"General Studies 1"}
+                        author={"John Doe"}
+                        updated={"2025-03-01T12:19:20.182Z"}
+                        readingTime={"10"}
+                    />
                 </div>
             </div>
         </div>
